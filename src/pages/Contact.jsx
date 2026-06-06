@@ -58,6 +58,10 @@ export default function Contact() {
       message: formData.message
     };
 
+    emailjs.init({
+      publicKey: publicKey
+    });
+
     emailjs.send(serviceId, templateId, templateParams, { publicKey })
       .then(() => {
         setStatus({ type: 'success', message: 'Your message has been sent successfully! Our payroll experts will get back to you shortly.' });

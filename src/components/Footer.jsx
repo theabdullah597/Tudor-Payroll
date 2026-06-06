@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import logo from '../assets/footer-logo.jpeg';
+import logo from '../assets/footer-logo.png';
 
 export default function Footer() {
   const handleScrollToTop = () => {
@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="border-t border-primary-container bg-primary-container/20">
         <div className="px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-on-primary-container text-center md:text-left">
-            Copyright © 2025 Tudor Payroll Limited. All rights reserved. Registered in England &amp; Wales.
+            Copyright © 2026 Tudor Payroll Limited. All rights reserved. Registered in England &amp; Wales.
           </p>
           <div className="flex gap-4 text-xs text-on-primary-container">
             <Link to="/privacy-policy" onClick={handleScrollToTop} className="hover:text-on-primary transition-colors">Privacy Policy</Link>
