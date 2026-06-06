@@ -40,14 +40,10 @@ export default function Contact() {
     setIsLoading(true);
     setStatus({ type: '', message: '' });
 
-    // Load EmailJS credentials from environment variables
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_tudor';
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_tudor';
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'public_tudor';
-
-    if (serviceId === 'service_tudor' || templateId === 'template_tudor' || publicKey === 'public_tudor') {
-      console.warn('Warning: EmailJS is using default/fallback credentials. If you have defined these in your .env file, please restart your development server (Ctrl+C and npm run dev) so Vite can reload the new environment variables.');
-    }
+    // Load EmailJS credentials from environment variables (with your actual keys as fallback defaults)
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_k4fghz9';
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_3gxdr8v';
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'MZROnu0pLq769s0Sx';
 
     const templateParams = {
       from_name: formData.fullName,

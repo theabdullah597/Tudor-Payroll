@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import careersImg from '../../assets/coworking.jpg';
-import { 
-  ArrowLeft, 
-  Calendar, 
-  User, 
+import {
+  ArrowLeft,
+  Calendar,
+  User,
   ArrowRight,
   Sparkles,
   CheckCircle2
@@ -58,9 +58,9 @@ export default function BuildingCareers() {
 
             {/* Feature Image */}
             <div className="w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden border border-outline-variant/30 shadow-lg mb-8">
-              <img 
-                src={careersImg} 
-                alt="Building Careers, Not Just Jobs featured banner" 
+              <img
+                src={careersImg}
+                alt="Building Careers, Not Just Jobs featured banner"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -69,7 +69,7 @@ export default function BuildingCareers() {
               <p className="text-xl text-on-surface-variant leading-relaxed mb-8">
                 UK businesses are realising the value of long-term employee development—not just filling vacancies, but investing in people’s futures. By shifting the focus from “jobs” to “careers,” organisations can boost retention, strengthen culture, and build a more resilient workforce.
               </p>
-              
+
               <h2 className="font-heading text-headline-md font-bold text-primary mt-12 mb-6">
                 The Career vs Job Mindset: Why It Matters
               </h2>
@@ -183,8 +183,8 @@ export default function BuildingCareers() {
                 <p className="text-tertiary-fixed-dim text-sm leading-relaxed">
                   Partner with Tudor Payroll Limited to establish long-term employee development tracks.
                 </p>
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 font-heading text-xs font-bold uppercase tracking-wider bg-secondary text-on-secondary px-6 py-3.5 rounded shadow-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors w-full justify-center"
                 >
                   Speak to an Expert
